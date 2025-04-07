@@ -1,0 +1,174 @@
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Салон краси у Харкові: послуги з догляду за волоссям, обличчям і тілом, професійна команда, комфортна атмосфера.">
+  <title>Салон Краси Харків</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f5;
+      color: #5e4b47;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #fceae8;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .nav-menu li {
+      display: inline;
+      margin-left: 1.5rem;
+    }
+    .nav-menu a {
+      text-decoration: none;
+      color: #a67873;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .nav-menu a:hover {
+      color: #d89c9c;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel-img {
+      width: 100vw;
+      height: 300px;
+      object-fit: cover;
+      scroll-snap-align: start;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      color: #b56b63;
+    }
+    .price-list li {
+      background: #fbe7e3;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 15px;
+      transition: background 0.3s;
+    }
+    .price-list li:hover {
+      background: #fbded9;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border: 1px solid #e3c1be;
+      border-radius: 10px;
+    }
+    .contact-form button {
+      background-color: #f7bdb7;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #f4a8a0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fceae8;
+      color: #8e6f6a;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Салон Краси</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="carousel" class="carousel">
+    <img src="1.avif" alt="Догляд за обличчям" class="carousel-img">
+    <img src="2.webp" alt="Масаж" class="carousel-img">
+    <img src="3.jpg" alt="Фарбування волосся" class="carousel-img">
+    <img src="4.avif" alt="Манікюр" class="carousel-img">
+  </section>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Ласкаво просимо до нашого салону краси!</h2>
+      <p>Ми пропонуємо широкий спектр послуг з догляду за тілом, обличчям і волоссям. Кожен візит — це нове відчуття краси та гармонії.</p>
+      <p>💖 Спеціальна пропозиція: Знижка -20% для нових клієнтів у квітні!</p>
+    </section>
+
+    <section>
+      <h2>Галерея наших робіт</h2>
+      <div class="gallery">
+        <img src="5.jpg" alt="Приклад макіяжу">
+        <img src="7.jpg" alt="Догляд за волоссям">
+        <img src="6.png" alt="Манікюр із дизайном">
+        <img src="8.jpg" alt="Професійне фарбування">
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2>Прайс-лист</h2>
+      <ul class="price-list">
+        <li>Стрижка жіноча — 350 грн</li>
+        <li>Фарбування волосся — від 700 грн</li>
+        <li>Манікюр з гель-лаком — 300 грн</li>
+        <li>Догляд за обличчям — 600 грн</li>
+        <li>Релакс масаж — 500 грн</li>
+        <li>Брови та вії — від 200 грн</li>
+      </ul>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакти</h2>
+      <p><strong>Адреса:</strong> м. Харків, вул. Весняна, 22</p>
+      <p><strong>Телефон:</strong> +380 50 987 6543</p>
+      <form class="contact-form">
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Салон Краси Харків | Всі права захищені</p>
+  </footer>
+
+  <script>
+    // Додаткові анімації або функції можна додати тут
+  </script>
+</body>
+</html>
